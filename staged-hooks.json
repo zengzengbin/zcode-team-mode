@@ -1,0 +1,38 @@
+{
+  "hooks": {
+    "enabled": true,
+    "timeoutMs": 5000,
+    "maxOutputBytes": 32768,
+    "events": {
+      "UserPromptSubmit": [
+        {
+          "hooks": [
+            {
+              "type": "process",
+              "command": "<NODE_PATH>",
+              "args": [
+                "<HOOK_SCRIPT_PATH>"
+              ],
+              "timeoutMs": 5000
+            }
+          ]
+        }
+      ],
+      "PreToolUse": [
+        {
+          "matcher": "^(Agent|Task|Skill)$",
+          "hooks": [
+            {
+              "type": "process",
+              "command": "<NODE_PATH>",
+              "args": [
+                "<HOOK_SCRIPT_PATH>"
+              ],
+              "timeoutMs": 5000
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

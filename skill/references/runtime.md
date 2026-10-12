@@ -2,14 +2,11 @@
 
 ## 文件位置
 
-- 技能：`C:/Users/23857/.zcode/skills/zcode-team-mode/`
-- 角色：`C:/Users/23857/.zcode/agents/team-*.md`
-- Hook 注册：`C:/Users/23857/.zcode/cli/config.json` 的 `hooks`
+- 技能：`%USERPROFILE%/.zcode/skills/zcode-team-mode/`
+- 角色：`%USERPROFILE%/.zcode/agents/team-*.md`
+- Hook 注册：`%USERPROFILE%/.zcode/cli/config.json` 的 `hooks`
 - Hook 程序：技能内 `scripts/team-mode-hook.cjs`
-- 会话状态和精简事件记录：`C:/Users/23857/.zcode/cli/team-mode/sessions/`
-- 源码、测试、安装记录：`C:/Users/23857/.zcode/skill-workspace/zcode-team-mode/`
-
-Codex 目录不参与安装或运行。本技能不携带 Codex 的 TOML 角色、openai.yaml、fast 参数或会话用量脚本。
+- 会话状态和精简事件记录：`%USERPROFILE%/.zcode/cli/team-mode/sessions/`
 
 ## 状态与拦截
 
